@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i&display=swap");
+h1 {
+  color: #333;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+h2 {
+  color: #333;
+  font-family: "Crimson Text", sans-serif;
+  padding: 4% 0;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 48px;
+}
+a {
+  color: #b9941a;
+  text-decoration: none;
+}
+a:hover {
+  color: #b9941a;
+  text-decoration: underline;
+}
+.header-text {
+  color: #fff;
+  font-size: 70px;
+}
+.header-bg,
+.signin-bg {
+  height: 60vh;
+  background-color: #333;
+  background-image: url("/img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: inset 300px 300px 0px 600px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 300px 300px 0px 600px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 300px 300px 0px 600px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-bg {
+  height: 90vh;
+  margin: 0;
+}
+
+.signin-square {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+.beer-square {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+}
+
+.btn {
+  background-color: #b9941a;
+  color: #fff;
+  border: none;
+  /* border: 2px solid white; */
+}
+.btn:hover {
+  background-color: white;
+  color: #b9941a;
+  border: 2px solid #b9941a;
+}
+.card-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
