@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import CardGroup from "react-bootstrap/CardGroup";
+import CardColumns from "react-bootstrap/CardColumns";
 
 import { loadAllBeers, loadByType } from "./../services/beer-api";
 
@@ -99,18 +99,14 @@ export default class Home extends Component {
           </Row>
         </Container>
         {(this.state.beers && (
-          <Col sm={12}>
-            <CardGroup className="card-set">
+          <div className="card-set">
+            <CardColumns>
               {this.state.beers.map(beer => (
                 <BeersCard beer={beer} />
               ))}
-            </CardGroup>
-          </Col>
-        )) || (
-          <Col sm={12}>
-            <h1>NO BEERS</h1>
-          </Col>
-        )}
+            </CardColumns>
+          </div>
+        )) || <h1>NO BEERS</h1>}
       </Fragment>
     );
   }
